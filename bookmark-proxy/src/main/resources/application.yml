@@ -1,0 +1,8 @@
+zuul:
+  routes:
+    api:
+      path: /api/**
+      serviceId: http://localhost:8081
+    ui:
+      path: /**
+      serviceId: http://localhost:3000
