@@ -1,4 +1,6 @@
 zuul:
+  ignoredPatterns:
+    - /authenticate/**
   routes:
     api:
       path: /api/**
