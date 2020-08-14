@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.xinghua24</groupId>
-	<artifactId>bookmark-be</artifactId>
+	<artifactId>bookmark-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bookmark-be</name>
+	<name>bookmark-backend</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

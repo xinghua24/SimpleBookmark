@@ -1,4 +1,4 @@
-package com.xinghua24.bookmarkproxy.model;
+package com.xinghua24.authservice.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

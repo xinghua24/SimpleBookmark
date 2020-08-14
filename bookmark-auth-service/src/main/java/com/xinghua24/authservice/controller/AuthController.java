@@ -1,8 +1,8 @@
-package com.xinghua24.bookmarkproxy.controller;
+package com.xinghua24.authservice.controller;
 
-import com.xinghua24.bookmarkproxy.model.AuthenticationRequest;
-import com.xinghua24.bookmarkproxy.model.AuthenticationResponse;
-import com.xinghua24.bookmarkproxy.security.jwt.JwtUtil;
+import com.xinghua24.authservice.JwtUtil;
+import com.xinghua24.authservice.model.AuthenticationRequest;
+import com.xinghua24.authservice.model.AuthenticationResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -10,7 +10,6 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -28,9 +27,9 @@ public class AuthController {
     @Autowired
     private UserDetailsService userDetailsService;
 
-    // POST http://localhost:8080/authenticate
+    // POST http://localhost:8080/login
     // Payload {"username": "foo", "password": "foo" }
-    @RequestMapping(value="/authenticate", method = RequestMethod.POST)
+    @RequestMapping(value="/login", method = RequestMethod.POST)
     public ResponseEntity<?> createAuthenticationToken(@RequestBody AuthenticationRequest authenticationRequest) throws Exception {
         try {
             authenticationManager.authenticate(
