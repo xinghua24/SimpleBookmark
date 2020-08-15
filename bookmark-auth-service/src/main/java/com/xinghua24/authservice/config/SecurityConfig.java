@@ -1,4 +1,4 @@
-package com.xinghua24.authservice;
+package com.xinghua24.authservice.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

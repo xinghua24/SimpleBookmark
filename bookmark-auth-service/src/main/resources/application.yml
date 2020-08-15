@@ -1,4 +1,7 @@
 server:
   port: 8081
 
-security.jwt.secret: mysupersafesecret
+xinghua24:
+  security:
+    jwt:
+      secret: mysecretkey

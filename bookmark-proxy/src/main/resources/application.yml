@@ -11,3 +11,8 @@ zuul:
     ui:
       path: /**
       serviceId: http://localhost:3000/
+
+xinghua24:
+  security:
+    jwt:
+      secret: mysecretkey
