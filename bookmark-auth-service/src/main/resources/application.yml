@@ -1,0 +1,7 @@
+server:
+  port: 8081
+
+xinghua24:
+  security:
+    jwt:
+      secret: mysecretkey

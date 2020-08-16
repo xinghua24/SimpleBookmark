@@ -1,5 +1,0 @@
-server:
-  port: 8081
-
-root:
-  url: http://localhost:8080

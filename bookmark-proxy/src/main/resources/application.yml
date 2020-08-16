@@ -1,8 +1,18 @@
 zuul:
   routes:
+    authService:
+      path: /login/**
+      serviceId: http://localhost:8081/
+      sensitiveHeaders: Cookie,Set-Cookie
+      stripPrefix: false
     api:
       path: /api/**
-      serviceId: http://localhost:8081
+      serviceId: http://localhost:8082/
     ui:
       path: /**
-      serviceId: http://localhost:3000
+      serviceId: http://localhost:3000/
+
+xinghua24:
+  security:
+    jwt:
+      secret: mysecretkey
