@@ -3,7 +3,7 @@
 # for development only
 # run mysql  server on port 3306
 # username: root
-# password 3306
+# password: password
 #
 # run phpmyadmin at http://localhost:7000/
 ####################################
