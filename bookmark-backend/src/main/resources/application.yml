@@ -1,2 +1,19 @@
 server:
   port: 8082
+
+ 
+# Datasource
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/bookmark
+    username: root
+    password: password
+
+spring.jpa.database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+spring.jpa.properties.hibernate.show_sql: true
+spring.jpa.properties.hibernate.use_sql_comments: true
+spring.jpa.properties.hibernate.format_sql: true
+# endpoints
+management.endpoints.web.exposure.include: health
