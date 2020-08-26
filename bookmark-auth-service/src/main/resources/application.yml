@@ -5,3 +5,13 @@ xinghua24:
   security:
     jwt:
       secret: mysecretkey
+      
+# Datasource
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/bookmark
+    username: root
+    password: password
+
+spring.jpa.database-platform: org.hibernate.dialect.MySQL5InnoDBDialect

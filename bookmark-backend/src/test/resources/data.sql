@@ -1,4 +1,5 @@
-INSERT INTO `user`(`username`, `password`) VALUES ('user', 'password');
+
+INSERT INTO `user`(`username`, `password`) VALUES ('user', '{bcrypt}$2y$12$G.VtlG.83.RlN9gxBYWqduSSzCk92WrTTvNsUH.Lw06jt9CaWOrKS');
 
 INSERT INTO `bookmarklist`(`id`, `name`, `user_username`) VALUES (1, 'default','user');
 

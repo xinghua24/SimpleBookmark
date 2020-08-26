@@ -1,6 +1,6 @@
 CREATE TABLE `user` (
   `username` varchar(25) PRIMARY KEY NOT NULL,
-  `password` varchar(25) NOT NULL
+  `password` varchar(255) NOT NULL
 );
 
 CREATE TABLE `bookmarklist` (
